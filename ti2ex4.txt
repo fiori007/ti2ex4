@@ -1,0 +1,53 @@
+Servidor:
+ti2bd.postgres.database.azure.com
+
+nome usuario ADM:
+adm@ti2bd
+
+
+Senha:
+*******
+
+JSON:
+
+/subscriptions/07b5e60f-022c-43a5-8c2b-2da6a104406c/resourceGroups/TI2BD/providers/Microsoft.DBforPostgreSQL/servers/ti2bd
+
+{
+    "sku": {
+        "name": "B_Gen5_1",
+        "tier": "Basic",
+        "family": "Gen5",
+        "capacity": 1
+    },
+    "properties": {
+        "administratorLogin": "adm",
+        "storageProfile": {
+            "storageMB": 5120,
+            "backupRetentionDays": 7,
+            "geoRedundantBackup": "Disabled",
+            "storageAutogrow": "Disabled"
+        },
+        "version": "11",
+        "sslEnforcement": "Disabled",
+        "minimalTlsVersion": "TLSEnforcementDisabled",
+        "userVisibleState": "Ready",
+        "fullyQualifiedDomainName": "ti2bd.postgres.database.azure.com",
+        "earliestRestoreDate": "2021-11-15T19:24:41.097+00:00",
+        "replicationRole": "None",
+        "masterServerId": "",
+        "replicaCapacity": 5,
+        "byokEnforcement": "Disabled",
+        "privateEndpointConnections": [],
+        "infrastructureEncryption": "Disabled",
+        "publicNetworkAccess": "Enabled"
+    },
+    "location": "eastus",
+    "tags": {},
+    "id": "/subscriptions/07b5e60f-022c-43a5-8c2b-2da6a104406c/resourceGroups/TI2BD/providers/Microsoft.DBforPostgreSQL/servers/ti2bd",
+    "name": "ti2bd",
+    "type": "Microsoft.DBforPostgreSQL/servers"
+}
+
+
+
+git@github.com:fiori007/ti2ex4.git
